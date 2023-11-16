@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+extern char **environ; // Declare the environ variable
+int main(int argc, char *argv[], char *env[])
+{
+		printf("Address of env (third parameter of main): %p\n", env);
+		printf("Address of environ (global variable): %p\n", environ);
+
+		return 0;
+}
